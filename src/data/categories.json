@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "id": "illustration",
+      "title": "Illustration",
+      "slug": "/illustration"
+    },
+    {
+      "id": "branding",
+      "title": "Branding",
+      "slug": "/branding"
+    },
+    {
+      "id": "product-design",
+      "title": "Product design",
+      "slug": "/product-design"
+    },
+    {
+      "id": "web-design",
+      "title": "Web design",
+      "slug": "/web-design"
+    }
+  ]
+}

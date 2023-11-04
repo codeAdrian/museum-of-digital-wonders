@@ -1,0 +1,49 @@
+.nav {
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--step--1);
+  text-transform: uppercase;
+  background: var(--color-background);
+}
+
+.nav--fixed {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+  user-select: none;
+}
+
+.nav__marker {
+  border: 0;
+  margin-bottom: -1px;
+  border-bottom: 2px solid var(--color-text);
+}
+
+.nav__link,
+.nav__link:visited {
+  color: var(--color-border);
+  text-decoration: none;
+  padding: 1rem 0;
+  display: block;
+  transition: color 0.2s ease;
+}
+
+.nav__link--current,
+.nav__link--current:visited {
+  color: var(--color-text);
+}
+
+.nav__link:hover,
+.nav__link:hover:visited {
+  color: var(--color-text);
+}

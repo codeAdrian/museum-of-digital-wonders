@@ -1,0 +1,185 @@
+{
+  "illustration": [
+    {
+      "id": "i01",
+      "author": "Joakim Ericsson",
+      "category": "illustration",
+      "title": "'Sorcerer - Reign Of The Reaper' cover art",
+      "slug": "sorcerer-reign-of-the-reaper-cover-art"
+    },
+    {
+      "id": "i08",
+      "author": "DAN Gartman for Fireart Studio",
+      "category": "illustration",
+      "title": "Iceland Landscape 3.0",
+      "slug": "iceland-landscape"
+    },
+    {
+      "id": "i04",
+      "author": "Alex Krugli",
+      "category": "illustration",
+      "title": "Undersea World",
+      "slug": "undersea-world"
+    },
+    {
+      "id": "i07",
+      "author": "Roberlan Borges Paresqui",
+      "category": "illustration",
+      "title": "Spaced Out System",
+      "slug": "spaced-out-system"
+    },
+    {
+      "id": "i05",
+      "author": "Ann-Sophie De Steur",
+      "category": "illustration",
+      "title": "Breughelesque Tower",
+      "slug": "breughelesque-tower"
+    },
+    {
+      "id": "i06",
+      "author": "Sam Dunn",
+      "category": "illustration",
+      "title": "Mastodon",
+      "slug": "mastodon"
+    },
+    {
+      "id": "i03",
+      "author": "tubik.arts",
+      "category": "illustration",
+      "title": "Autumn Harvest Illustration",
+      "slug": "autumn-harvest"
+    },
+    {
+      "id": "i02",
+      "author": "Samji_illustrator",
+      "category": "illustration",
+      "title": "Summer Breeze",
+      "slug": "summer-breeze"
+    }
+  ],
+  "branding": [
+    {
+      "id": "b05",
+      "author": "tubik.arts",
+      "category": "branding",
+      "title": "Japanese Restaurant Packaging Design",
+      "slug": "japanese-restaurant-packaging"
+    },
+    {
+      "id": "b06",
+      "author": "Muhammad Bagus Prasetyo for Skilline Design Co",
+      "category": "branding",
+      "title": "Pepper & Salt BBQ - T-shirt Design",
+      "slug": "pepper-salt-bbq-t-shirt"
+    },
+    {
+      "id": "b04",
+      "author": "Jared Jacob",
+      "category": "branding",
+      "title": "Old Miners Inn Logo",
+      "slug": "old-miners-inn-logo"
+    },
+    {
+      "id": "b02",
+      "author": "Eddie Lobanovskiy",
+      "category": "branding",
+      "title": "Nifty",
+      "slug": "the-nifty"
+    },
+    {
+      "id": "b01",
+      "author": "Jeroen van Eerden",
+      "category": "branding",
+      "title": "Qerra - Logo Design v5",
+      "slug": "qerra"
+    },
+    {
+      "id": "b03",
+      "author": "Eddie Lobanovskiy",
+      "category": "branding",
+      "title": "Solana Summer Camp",
+      "slug": "solana-summer-camp"
+    }
+  ],
+  "product-design": [
+    {
+      "id": "pd01",
+      "author": "uixNinja",
+      "category": "product-design",
+      "title": "Dashboard",
+      "slug": "uixninja-dashboard"
+    },
+    {
+      "id": "pd05",
+      "author": "Ilya Pekhterev",
+      "category": "product-design",
+      "title": "Frederique Constant Watch Face",
+      "slug": "frederique-constant-watch-face"
+    },
+    {
+      "id": "pd02",
+      "author": "Md Sala Uddin",
+      "category": "product-design",
+      "title": "Food Box Packaging design",
+      "slug": "food-box-packaging-design"
+    },
+    {
+      "id": "pd03",
+      "author": "The Digital Bunch",
+      "category": "product-design",
+      "title": "Calendar in the Medical App",
+      "slug": "calendar-medical-app"
+    },
+    {
+      "id": "pd04",
+      "author": "Monir Parbej",
+      "category": "product-design",
+      "title": "Street Rider t-shirt design",
+      "slug": "street-rider-tshirt"
+    }
+  ],
+  "web-design": [
+    {
+      "id": "wd01",
+      "author": "Yi Li",
+      "category": "web-design",
+      "title": "National Park Website",
+      "slug": "national-park-website"
+    },
+    {
+      "id": "wd02",
+      "author": "Agum Satria for Gintera",
+      "category": "web-design",
+      "title": "Bold - Personality Landing Page",
+      "slug": "bold-personality-landing-page"
+    },
+    {
+      "id": "wd03",
+      "author": "Sajibur Rahman",
+      "category": "web-design",
+      "title": "Cyber Security Landing Page Design",
+      "slug": "cyber-security-landing-page-design"
+    },
+    {
+      "id": "wd04",
+      "author": "Ivan Haidutski",
+      "category": "web-design",
+      "title": "Illustration for Website",
+      "slug": "illustration-for-website"
+    },
+    {
+      "id": "wd05",
+      "author": "Outcrowd",
+      "category": "web-design",
+      "title": "Mooi - Website design",
+      "slug": "mooi-website-design"
+    },
+    {
+      "id": "wd06",
+      "author": "Zé Casal",
+      "category": "web-design",
+      "title": "Husqvarna customizer",
+      "slug": "husqvarna-customizer"
+    }
+  ]
+}
