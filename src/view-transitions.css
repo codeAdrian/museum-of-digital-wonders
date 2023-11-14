@@ -13,16 +13,19 @@
   overflow: clip;
 }
 
-/* The old view is the thumbnail */
-::view-transition-old(item-image) {
-  /* Maintain the aspect ratio of the view,
-  by shrinking it to fit within the bounds of the element */
+/* Transition from item details page to category page */
+.category::view-transition-old(item-image) {
+  object-fit: cover;
+}
+.category::view-transition-new(item-image) {
   object-fit: contain;
 }
 
-/* The new view is the full image */
-::view-transition-new(item-image) {
-  /* Maintain the aspect ratio of the view,
-  by growing it to cover the bounds of the element */
+/* Transition from category page to item details page */
+
+.details::view-transition-old(item-image) {
+  object-fit: contain;
+}
+.details::view-transition-new(item-image) {
   object-fit: cover;
 }

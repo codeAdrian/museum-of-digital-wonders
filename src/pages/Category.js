@@ -7,6 +7,8 @@ import { useLoaderData } from "react-router-dom";
 import { redirect } from "react-router-dom";
 
 export async function loader({ params }) {
+  document.documentElement.className = "category";
+
   return params?.category
     ? items[params.category]
     : redirect(categories.items[0].slug);

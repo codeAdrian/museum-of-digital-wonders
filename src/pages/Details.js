@@ -11,6 +11,7 @@ import {
 import "./details.css";
 
 export async function loader({ params }) {
+  document.documentElement.className = "details";
   const item = items[params.category].find(({ slug }) =>
     params.slug.includes(slug)
   );
