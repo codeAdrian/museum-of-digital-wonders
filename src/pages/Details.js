@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+import React from "react";
+import { flushSync } from "react-dom";
 
 import items from "../data/items.json";
 import categories from "../data/categories.json";
@@ -25,29 +26,27 @@ export async function loader({ params }) {
 }
 
 const Details = () => {
+  const [isFullImage, setIsFullImage] = React.useState(false);
   const data = useLoaderData();
   const { id, category, title, author } = data;
   const categoryUrl = `/${category}`;
 
-  const isTransitioning = unstable_useViewTransitionState(categoryUrl, {
-    relative: true,
-  });
-
-  const imageRef = useRef();
-  const modalRef = useRef();
+  const isTransitioning = unstable_useViewTransitionState(categoryUrl);
 
   const itemCategory = categories.items.find(({ id }) => id === category);
 
+  const toggleImageState = () => setIsFullImage((state) => !state);
+
   const handleZoom = async () => {
-    imageRef.current.style.viewTransitionName = "item-image";
+    if (document.startViewTransition) {
+      const transition = document.startViewTransition(() => {
+        flushSync(toggleImageState);
+      });
 
-    const transition = document.startViewTransition(() => {
-      imageRef.current.classList.toggle("item__image--active");
-      modalRef.current.classList.toggle("item__overlay--active");
-    });
-
-    await transition.finished;
-    imageRef.current.style.viewTransitionName = "none";
+      await transition.finished;
+    } else {
+      toggleImageState();
+    }
   };
 
   return (
@@ -78,10 +77,14 @@ const Details = () => {
             <button onClick={handleZoom} className="item__toggle">
               <img
                 style={{
-                  viewTransitionName: isTransitioning ? "item-image" : "",
+                  viewTransitionName:
+                    isTransitioning || isFullImage ? "item-image" : "",
                 }}
-                ref={imageRef}
-                className="item__image"
+                className={
+                  isFullImage
+                    ? "item__image item__image--active"
+                    : "item__image"
+                }
                 src={`/assets/${category}/${id}-min.jpg`}
                 alt=""
               />
@@ -126,7 +129,11 @@ const Details = () => {
           </div>
         </article>
       </section>
-      <aside ref={modalRef} className="item__overlay" />
+      <aside
+        className={
+          isFullImage ? "item__overlay item__overlay--active" : "item__overlay"
+        }
+      />
     </>
   );
 };
