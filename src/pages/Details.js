@@ -26,6 +26,7 @@ export async function loader({ params }) {
 }
 
 const Details = () => {
+  const [isImageTransition, setIsImageTransition] = React.useState(false);
   const [isFullImage, setIsFullImage] = React.useState(false);
   const data = useLoaderData();
   const { id, category, title, author } = data;
@@ -39,11 +40,13 @@ const Details = () => {
 
   const handleZoom = async () => {
     if (document.startViewTransition) {
+      setIsImageTransition(true);
       const transition = document.startViewTransition(() => {
         flushSync(toggleImageState);
       });
 
       await transition.finished;
+      setIsImageTransition(false);
     } else {
       toggleImageState();
     }
@@ -78,7 +81,7 @@ const Details = () => {
               <img
                 style={{
                   viewTransitionName:
-                    isTransitioning || isFullImage ? "item-image" : "",
+                    isTransitioning || isImageTransition ? "item-image" : "",
                 }}
                 className={
                   isFullImage
